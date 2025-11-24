@@ -4,12 +4,6 @@
 - src/ : model training & prediction code
 - scripts/ : data generation script
 - out/dev_pred.json : model predictions on dev set (if present)
-- IIT Madras assignment PDF (uploaded): /mnt/data/IIT Madras __ Assignment 2025 (1).pdf
-- metrics.json : final PII precision/recall/F1 on dev set
-- README.md : this file
-
-**Contact / Submission form fields**  
-Email: anvitkumars2001@gmail.com
 
 ## Model & tokenizer
 - Model: distilbert-base-uncased (DistilBERT)
