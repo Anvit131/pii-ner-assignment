@@ -30,11 +30,3 @@
 2. Run cells in order. The trained model is saved to out/distil_baseline.
 3. Predictions written to out/dev_pred.json
 4. For latency run: python src/measure_latency_simple.py --model_dir out/distil_baseline --input data/dev.jsonl --runs 50
-
-## Loom script (what to say)
-- Final results: PII precision 1.0, recall 1.0, F1 1.0.
-- Code base: src/ contains dataset conversion, train.py, predict_and_postprocess.py, eval_span_simple.py
-- Model: distilbert-base-uncased with token classification head
-- Key hyperparameters: epochs=2, batch_size=8; DataCollatorForTokenClassification used for label padding
-- Latency: run measure_latency_simple.py for p50/p95 on your CPU
-- Demo: run a short demo showing one input and model predicted spans
