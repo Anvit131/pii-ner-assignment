@@ -30,3 +30,29 @@
 2. Run cells in order. The trained model is saved to out/distil_baseline.
 3. Predictions written to out/dev_pred.json
 4. For latency run: python src/measure_latency_simple.py --model_dir out/distil_baseline --input data/dev.jsonl --runs 50
+
+```text
+pii-ner-assignment/
+│
+├── scripts/
+│   └── generate_stt_data.py
+│
+├── src/
+│   ├── dataset.py
+│   ├── train.py
+│   └── predict_and_postprocess.py
+│
+├── out/
+│   └── distil_baseline/
+│
+├── data/
+│   ├── train.jsonl
+│   └── dev.jsonl
+│
+├── dev_pred.json
+├── metrics.json
+├── README.md
+└── PII_NER_submission.zip
+```
+
+
